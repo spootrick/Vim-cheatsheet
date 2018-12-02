@@ -11,13 +11,13 @@ where:
 
 Some of the operators and motions
 
-| Operator | Description |
+| Operator | Description |
 | :---: | --- |
 | d | Delete the line, word, sentence, ... |
 | p | Put previously deleted text after cursor |
 | x | Delete character under the cursor |
 | r | Replace character under the cursor |
-| R | Replace more than one character (Replace mode) |
+| R | Replace more than one character (Replace mode) |
 | c | Change |
 | n | Next |
 | N | Previous |
@@ -32,18 +32,18 @@ Some of the operators and motions
 | :---: | --- |
 | w | Until start of the next word, EXCLUDING its first character. |
 | e | To the end of the current word, INCLUDING the last character. |
-| $ | To the end of the line, INCLUDING the last character. |
+| $ | To the end of the line, INCLUDING the last character. |
 | 0 | To move to the start of the line. (zero) |
 | gg | To move to the start of the file. |
 | G | To move to the end of the file. |
 
 
-## Deletion
+## Deletion  
 | Command | Memo | Description | Example |
 | :---: | --- | --- | --- |
 | x | - | delete character under the cursor | - |
 | dw | delete word | deletes the word | dw, d2w |
-| d$ | regex | delete till end of the line | - |
+| d$ | regex | delete till end of the line | - |
 | dd | - | delete whole line | dd, 2dd |
 
 
@@ -54,7 +54,7 @@ Press `CTRL+R` to redo. (undo the undo's)
 ## Cursor Location and File Status
 Type `CTRL-G` to show location in the file and the file status. (see `:help ruler`)
 
-## Searching
+## Searching
 Type `/` followed by a phrase to search for it. Search from current cursor position to bottom of the file.  
 Type `?` followed by a phrase to search for it. This will search backwards.
 
@@ -63,7 +63,7 @@ To search for the same phrase in the opposite direction, type `N`.
 
 To go back to where you came from press `CTRL-O`. (Letter o) To go forward press `CTRL-I`
 
-### Matching Parentheses Search
+### Matching Parentheses Search
 To find a matching ), ] or } type `%` character.
 
 ## Substitude (Search and Replace)
@@ -77,17 +77,17 @@ Syntax: `:s/old/new/g`
 ## Save as
 Type `:w filename`
 
-## Execute External Command
+## Execute External Command
 Type `:!` before any shell command. Like `:!ls -lh`
 
-## Visual Mode
+## Visual Mode
 Type `v` to select text. You can perform any command on this selected part of text.
 
 ## Retrieve and Merge Files
 To insert the contents of a file, type `:r filename`  
 To insert the contents of an external command output, type `:r !command`
 
-## Set Option
+## Set Option
 You can set options to vim to use. This commands will be useful and persistent within .vimrc file.  
 
 Syntax: `:set xxx`
